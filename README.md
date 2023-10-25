@@ -38,6 +38,7 @@ public List<Avaliacao> getAllAvaliacoes(Long idProduto) throws Exception {
 
 <h2>Requests</h2>
 1) Cadastrar produto
+
 ````
 curl --request POST \
   --url http://localhost:8088/produto \
