@@ -38,7 +38,7 @@ public List<Avaliacao> getAllAvaliacoes(Long idProduto) throws Exception {
 
 <h2>Requests</h2>
 1) Cadastrar produto
-```
+````
 curl --request POST \
   --url http://localhost:8088/produto \
   --header 'Content-Type: application/json' \
@@ -46,10 +46,10 @@ curl --request POST \
   --data '{
 	"nome":"Produto 1"
 }'
-```
+````
 
 2) Cadastrar avaliação
-```
+````
 curl --request POST \
   --url http://localhost:8089/avaliacoes \
   --header 'Content-Type: application/json' \
@@ -59,14 +59,14 @@ curl --request POST \
 	"descricao": "descricao aqui",
 	"idProduto": 1
 }'
-```
+````
 
 3) Listar todas as avaliações do produto de id=1
-```
+````
 curl --request GET \
   --url http://localhost:8088/produtos/1/avaliacoes \
   --header 'User-Agent: insomnia/8.3.0'
-```
+````
 
 <h2>Links úteis</h2>
 - Documentação do Resilience4j: https://resilience4j.readme.io/docs/circuitbreaker <br>
