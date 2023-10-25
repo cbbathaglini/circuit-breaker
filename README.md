@@ -7,9 +7,10 @@ Objetivo principal: Entender o conceito de circuitbreaker e implementá-lo utili
 
 <h2>Rodando: Passo a passo</h2>
 1) Rodar a linha abaixo.
-```
+
+````
 docker-compose up
-```
+````
 Vai criar um container e subir a imagem do banco de dados MariaDB, esse banco vai estar exposto na porta 3307.
 
 2) Rodar o ProdutosApplication
