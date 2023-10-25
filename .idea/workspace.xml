@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29f4dfee-3e80-42c1-a777-c40de52c75ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/avaliacoes/src/main/java/br/com/avaliacoes/controller/AvaliacaoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/avaliacoes/src/main/java/br/com/avaliacoes/model/AvaliacaoRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/avaliacoes/src/main/java/br/com/avaliacoes/repository/AvaliacaoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/produtos/src/main/java/br/com/produtos/client/AvaliacaoRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/produtos/src/main/java/br/com/produtos/service/AvaliacoesDoProdutoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/89e2c3d3-de90-48bd-9561-3d80fd3e7d1a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/89e2c3d3-de90-48bd-9561-3d80fd3e7d1a.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/89e2c3d3-de90-48bd-9561-3d80fd3e7d1a/storage_v2/_src_/schema/ecommerce.QLYXWw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/89e2c3d3-de90-48bd-9561-3d80fd3e7d1a/storage_v2/_src_/schema/ecommerce.QLYXWw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/produtos/src/main/java/br/com/produtos/config/CircuitBreakerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/avaliacoes/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/avaliacoes/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/avaliacoes/src/main/java/br/com/avaliacoes/model/Avaliacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/avaliacoes/src/main/java/br/com/avaliacoes/model/Avaliacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/avaliacoes/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/avaliacoes/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/produtos/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/produtos/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/produtos/src/main/java/br/com/produtos/controller/ProdutoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/produtos/src/main/java/br/com/produtos/controller/ProdutoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/produtos/src/main/java/br/com/produtos/service/AvaliacoesDoProdutoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/produtos/src/main/java/br/com/produtos/service/AvaliacoesDoProdutoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/produtos/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/produtos/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +91,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProdutosApplication">
+  <component name="RunManager" selected="Spring Boot.AvaliacoesApplication">
     <configuration name="AvaliacoesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="avaliacoes" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.avaliacoes.AvaliacoesApplication" />
@@ -152,7 +145,7 @@
       <workItem from="1698110957911" duration="2232000" />
       <workItem from="1698113922093" duration="167000" />
       <workItem from="1698114576916" duration="3380000" />
-      <workItem from="1698188057617" duration="9590000" />
+      <workItem from="1698188057617" duration="12637000" />
     </task>
     <servers />
   </component>
@@ -179,7 +172,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/produtos/src/main/java/br/com/produtos/service/AvaliacoesDoProdutoService.java</url>
-          <line>29</line>
+          <line>42</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -194,8 +187,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/produtos/src/main/java/br/com/produtos/service/AvaliacoesDoProdutoService.java</url>
-          <line>45</line>
+          <line>58</line>
           <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/produtos/src/main/java/br/com/produtos/service/AvaliacoesDoProdutoService.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/avaliacoes/src/main/java/br/com/avaliacoes/repository/AvaliacaoRepository.java</url>

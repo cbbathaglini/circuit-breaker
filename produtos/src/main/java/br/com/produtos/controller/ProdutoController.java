@@ -36,7 +36,9 @@ public class ProdutoController {
     public ResponseEntity<?> getAllAvaliacoes(@PathVariable Long idProduto) throws Exception {
 
         List<Avaliacao> avaliacaoList = avaliacoesDoProdutoService.getAllAvaliacoes(idProduto);
-
+        if(avaliacaoList.isEmpty()){
+            return ResponseEntity.internalServerError().build();
+        }
         return ResponseEntity.ok().body(avaliacaoList);
     }
 
