@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29f4dfee-3e80-42c1-a777-c40de52c75ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/produtos/src/main/java/br/com/produtos/config/CircuitBreakerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produtos/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/produtos/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produtos/src/main/java/br/com/produtos/controller/ProdutoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/produtos/src/main/java/br/com/produtos/controller/ProdutoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produtos/src/main/java/br/com/produtos/service/AvaliacoesDoProdutoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/produtos/src/main/java/br/com/produtos/service/AvaliacoesDoProdutoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produtos/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/produtos/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/circuit-breaker/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/circuit-breaker/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +57,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "feature/get-avaliacoes-produto",
+    "git-widget-placeholder": "feature/colocando-circuit-breaker",
     "jdk.selected.JAVA_MODULE": "jbr-17",
     "last_opened_file_path": "C:/Users/cbbat/documentos/projetos/circuit-breaker/produtos/src/main/java/br/com/produtos",
     "node.js.detected.package.eslint": "true",
@@ -145,7 +143,7 @@
       <workItem from="1698110957911" duration="2232000" />
       <workItem from="1698113922093" duration="167000" />
       <workItem from="1698114576916" duration="3380000" />
-      <workItem from="1698188057617" duration="12637000" />
+      <workItem from="1698188057617" duration="13942000" />
     </task>
     <servers />
   </component>
