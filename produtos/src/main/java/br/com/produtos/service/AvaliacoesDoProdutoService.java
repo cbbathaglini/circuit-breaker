@@ -3,26 +3,39 @@ package br.com.produtos.service;
 import br.com.avaliacoes.model.Avaliacao;
 import br.com.produtos.client.AvaliacaoRequest;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.github.resilience4j.circuitbreaker.CircuitBreakerConfig;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedHashMap;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
+
+import io.github.resilience4j.circuitbreaker.CircuitBreakerConfig;
+
 
 @Service
 public class AvaliacoesDoProdutoService {
+
+    private final Logger logger = LoggerFactory.getLogger(AvaliacoesDoProdutoService.class);
     private RestTemplate restTemplate;
 
-    public AvaliacoesDoProdutoService(){
+    private final Map<Long, List<Avaliacao>> CACHE = new HashMap<>();
+    //private final io.github.resilience4j.circuitbreaker.CircuitBreaker circuitBreaker;
+
+    public AvaliacoesDoProdutoService() {
         this.restTemplate = new RestTemplateBuilder().build();
+        //CircuitBreakerConfig config = CircuitBreakerConfig.ofDefaults();
+        //circuitBreaker = io.github.resilience4j.circuitbreaker.CircuitBreaker.of("avaliacoesProdutoCB", config);
     }
 
+
+    @CircuitBreaker(name="avaliacoesProdutoCB", fallbackMethod = "getAllAvaliacoesNoCache")
     public List<Avaliacao> getAllAvaliacoes(Long idProduto) throws Exception {
         List<Avaliacao> avaliacoesList = new ArrayList<>();
         try{
@@ -52,10 +65,17 @@ public class AvaliacoesDoProdutoService {
 
 
         }catch (Exception e){
-            throw new Exception(e);
+            logger.error("[ERROR] Trying to connect with api avaliações: " + e);
+            throw e;
         }
 
+        logger.info("Alimentando o cache");
+        CACHE.put(idProduto, avaliacoesList);
         return avaliacoesList;
+    }
+
+    public List<Avaliacao> getAllAvaliacoesNoCache(Long idProduto, Throwable t) {
+        return CACHE.getOrDefault(idProduto, new ArrayList<>());
     }
 
     private Long convertIntegerToLongValue(Object id) {
