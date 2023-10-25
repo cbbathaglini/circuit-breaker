@@ -1,4 +1,4 @@
-# API de Produtos e API de Avaliações
+# Implementando o Circuit breaker - API de Produtos e API de Avaliações
 Objetivo principal: Entender o conceito de circuitbreaker e implementá-lo utilizando Resilience4j e Spring Boot.<br>
 *Obs:* Produtos e avaliações são salvos no banco de dados MariaDB.
 
